@@ -1,0 +1,152 @@
+ * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: 30px 0 15px 0;
+            font-weight: bold;
+        }
+
+        /* Input Form styling */
+        .input-section {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .input-section input, 
+        .input-section select {
+            flex: 1;
+            min-width: 150px;
+            padding: 12px;
+            border: 1px solid #000000;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .input-section button {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .input-section button:hover {
+            background-color: #333333;
+        }
+
+        /* Lists styling */
+        .todo-list-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        /* Incomplete active items */
+        .item-active {
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #000000;
+        }
+
+        /* Completed items */
+        .item-completed {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #000000;
+        }
+
+        .item-left {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex: 2;
+        }
+
+        .item-index {
+            font-weight: bold;
+        }
+
+        .item-name {
+            word-break: break-word;
+        }
+
+        .item-center {
+            flex: 1;
+            text-align: center;
+        }
+
+        .item-right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 25px;
+            flex: 2;
+        }
+
+        .item-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* SVG Action Icon buttons */
+        .icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+        }
+
+        .item-active .icon-btn svg {
+            fill: #ffffff;
+        }
+
+        .item-completed .icon-btn svg {
+            fill: #000000;
+        }
+
+        .icon-btn:hover {
+            opacity: 0.7;
+        }
+
+        .empty-message {
+            font-style: italic;
+            color: #666666;
+            padding-left: 5px;
+        }
